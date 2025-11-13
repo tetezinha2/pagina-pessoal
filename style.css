@@ -1,1 +1,96 @@
+/* Definição de uma cor roxo claro para uso fácil */
+:root {
+    --light-purple: #D8BFD8; /* Thistle - Roxo Claro */
+    --text-color: #333;
+    --background-color: #f4f4f9;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    position: relative; /* Para posicionar o elemento de animação */
+}
+
+/* Estilo da Foto de Perfil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid var(--light-purple); /* Borda roxo claro */
+}
+
+.profile-card h1 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    color: #666;
+    font-style: italic;
+}
+
+/* Estilo dos Links Sociais */
+.social-links {
+    margin-top: 25px;
+}
+
+.social-icon {
+    display: inline-block;
+    color: #fff; /* Cor do ícone */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição para o hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores de fundo dos ícones */
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.whatsapp {
+    background-color: #25D366;
+}
+.spotify {
+    background-color: #1DB954;
+}
+
+/* Efeito Hover (passar o mouse) - Roxo Claro como feedback */
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1); /* Animação simples ao passar o mouse */
+    background-color: var(--light-purple); /* Feedback com a cor roxo claro */
+}
+
+
+/* Estilo para o elemento de animação JavaScript */
+#animacao-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-purple);
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--light-purple);
+}

@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - [Seu Nome]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="animacao-box"></div> 
+        
+        <div class="profile-card">
+            <img src="caminho/para/sua/foto.jpg" alt="Foto de Perfil" class="profile-img">
+            <h1>[Seu Nome Completo]</h1>
+            <p>Desenvolvedor(a) | Entusiasta de Tecnologia</p>
+        </div>
 
+        <div class="social-links">
+            <a href="#LINK_INSTAGRAM" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <a href="#LINK_WHATSAPP" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <a href="#LINK_SPOTIFY" target="_blank" class="social-icon spotify" aria-label="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
