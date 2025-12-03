@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Pessoal - [Estefany]</title>
+    <title>Estefany - Página Pessoal</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="IMG_5171.jpeg">
 </head>
 <body>
-    <div class="container">
-        <div id="animacao-box"></div> 
-        
-        <div class="profile-card">
-            <img src="caminho/para/sua/foto.jpg" alt="Foto de Perfil" class="profile-img">
-            <h1>[Seu Nome Completo]</h1>
-            <p>Desenvolvedor(a) | Entusiasta de Tecnologia</p>
-        </div>
 
-        <div class="social-links">
-            <a href="#LINK_INSTAGRAM" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            
-            <a href="#LINK_WHATSAPP" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            
-            <a href="#LINK_SPOTIFY" target="_blank" class="social-icon spotify" aria-label="Spotify">
-                <i class="fab fa-spotify"></i>
-            </a>
+    <header>
+        <div class="profile-info">
+            <img src="IMG_5171.jpeg" alt="Foto de Perfil da Estefany" class="profile-photo">
+            <h1>Estefany</h1>
         </div>
-    </div>
+        <nav>
+            <button class="nav-button" data-section="about">Sobre mim</button>
+            <button class="nav-button" data-section="course">Meu curso</button>
+            <button class="nav-button" data-section="family">Minha família</button>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="welcome" class="content-section active">
+            <h2>Bem-vinda!</h2>
+            <p>Clique em um dos botões acima para começar a explorar a página da Estefany.</p>
+        </section>
+
+        <section id="about" class="content-section hidden">
+            <h2 class="section-title">Sobre mim</h2>
+            <p class="section-text">
+                Eu sou a Estefany, tenho 16 anos, nessa página irei mostrar um pouco sobre mim.
+            </p>
+            <div class="photo-gallery grid-2">
+                <div class="photo-placeholder">Foto 1</div>
+                <div class="photo-placeholder">Foto 2</div>
+            </div>
+        </section>
+
+        <section id="course" class="content-section hidden">
+            <h2 class="section-title">Meu curso</h2>
+            <p class="section-text">
+                Curso Desenvolvimento de sistemas no Szymanski, e esses são meus colegas de curso e um pouco sobre ele.
+            </p>
+            <div class="photo-gallery grid-2">
+                <div class="photo-placeholder">Colega 1</div>
+                <div class="photo-placeholder">Colega 2</div>
+            </div>
+        </section>
+
+        <section id="family" class="content-section hidden">
+            <h2 class="section-title">Minha família</h2>
+            <p class="section-text">
+                Essa é a minha família e meus amigos que eu considero como parte dela.
+            </p>
+            <div class="photo-gallery grid-4">
+                <div class="photo-placeholder">Família/Amigo 1</div>
+                <div class="photo-placeholder">Família/Amigo 2</div>
+                <div class="photo-placeholder">Família/Amigo 3</div>
+                <div class="photo-placeholder">Família/Amigo 4</div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
