@@ -1,66 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estefany - Página Pessoal</title>
+    <title>Eco Kids - Comunicação Assistiva</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="IMG_5171.jpeg">
 </head>
 <body>
 
     <header>
-        <div class="profile-info">
-            <img src="IMG_5171.jpeg" alt="Foto de Perfil da Estefany" class="profile-photo">
-            <h1>Estefany</h1>
-        </div>
-        <nav>
-            <button class="nav-button" data-section="about">Sobre mim</button>
-            <button class="nav-button" data-section="course">Meu curso</button>
-            <button class="nav-button" data-section="family">Minha família</button>
-        </nav>
+        <h1>Eco Kids <span>🍃</span></h1>
+        <p>Clique no ícone para falar</p>
     </header>
 
-    <main id="content">
-        <section id="welcome" class="content-section active">
-            <h2>Bem-vinda!</h2>
-            <p>Clique em um dos botões acima para começar a explorar a página da Estefany.</p>
-        </section>
+    <main id="board">
+        <div class="card" onclick="falar('Eu quero comer')">
+            <span class="emoji">🍎</span>
+            <p>Comer</p>
+        </div>
 
-        <section id="about" class="content-section hidden">
-            <h2 class="section-title">Sobre mim</h2>
-            <p class="section-text">
-                Eu sou a Estefany, tenho 16 anos, nessa página irei mostrar um pouco sobre mim.
-            </p>
-            <div class="photo-gallery grid-2">
-                <div class="photo-placeholder">Foto 1</div>
-                <div class="photo-placeholder">Foto 2</div>
-            </div>
-        </section>
+        <div class="card" onclick="falar('Eu quero beber água')">
+            <span class="emoji">💧</span>
+            <p>Beber</p>
+        </div>
 
-        <section id="course" class="content-section hidden">
-            <h2 class="section-title">Meu curso</h2>
-            <p class="section-text">
-                Curso Desenvolvimento de sistemas no Szymanski, e esses são meus colegas de curso e um pouco sobre ele.
-            </p>
-            <div class="photo-gallery grid-2">
-                <div class="photo-placeholder">Colega 1</div>
-                <div class="photo-placeholder">Colega 2</div>
-            </div>
-        </section>
+        <div class="card" onclick="falar('Eu quero ir ao banheiro')">
+            <span class="emoji">🧻</span>
+            <p>Banheiro</p>
+        </div>
 
-        <section id="family" class="content-section hidden">
-            <h2 class="section-title">Minha família</h2>
-            <p class="section-text">
-                Essa é a minha família e meus amigos que eu considero como parte dela.
-            </p>
-            <div class="photo-gallery grid-4">
-                <div class="photo-placeholder">Família/Amigo 1</div>
-                <div class="photo-placeholder">Família/Amigo 2</div>
-                <div class="photo-placeholder">Família/Amigo 3</div>
-                <div class="photo-placeholder">Família/Amigo 4</div>
-            </div>
-        </section>
+        <div class="card" onclick="falar('Estou com sono')">
+            <span class="emoji">😴</span>
+            <p>Sono</p>
+        </div>
+
+        <div class="card" onclick="falar('Estou feliz')">
+            <span class="emoji">😊</span>
+            <p>Feliz</p>
+        </div>
+
+        <div class="card" onclick="falar('Estou triste')">
+            <span class="emoji">😢</span>
+            <p>Triste</p>
+        </div>
     </main>
 
     <script src="script.js"></script>
