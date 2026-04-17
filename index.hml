@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Kids - Comunicação Assistiva</title>
+    <title>Eco Kids - Tons Pastéis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Eco Kids <span>🍃</span></h1>
-        <p>Clique no ícone para falar</p>
+        <h1>Eco Kids <span class="puzzle">🧩</span></h1>
+        <p>Toque na imagem para falar</p>
     </header>
 
     <main id="board">
-        <div class="card" onclick="falar('Eu quero comer')">
+        <div class="card c-azul" onclick="falar('Eu quero comer')">
             <span class="emoji">🍎</span>
             <p>Comer</p>
         </div>
 
-        <div class="card" onclick="falar('Eu quero beber água')">
+        <div class="card c-azul" onclick="falar('Eu quero beber água')">
             <span class="emoji">💧</span>
             <p>Beber</p>
         </div>
 
-        <div class="card" onclick="falar('Eu quero ir ao banheiro')">
+        <div class="card c-amarelo" onclick="falar('Eu quero ir ao banheiro')">
             <span class="emoji">🧻</span>
             <p>Banheiro</p>
         </div>
 
-        <div class="card" onclick="falar('Estou com sono')">
+        <div class="card c-amarelo" onclick="falar('Estou com sono')">
             <span class="emoji">😴</span>
             <p>Sono</p>
         </div>
 
-        <div class="card" onclick="falar('Estou feliz')">
+        <div class="card c-verde" onclick="falar('Estou feliz')">
             <span class="emoji">😊</span>
             <p>Feliz</p>
         </div>
 
-        <div class="card" onclick="falar('Estou triste')">
+        <div class="card c-vermelho" onclick="falar('Estou triste')">
             <span class="emoji">😢</span>
             <p>Triste</p>
+        </div>
+        
+        <div class="card c-verde" onclick="falar('Eu quero brincar')">
+            <span class="emoji">🧸</span>
+            <p>Brincar</p>
         </div>
     </main>
 
